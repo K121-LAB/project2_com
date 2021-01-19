@@ -1,0 +1,387 @@
+:root {
+   
+ --red: hsl(0, 78%, 62%);
+  
+ --cyan: hsl(180, 62%, 55%);
+
+ --orange: hsl(34, 97%, 64%);
+   
+ --blue: hsl(212, 86%, 64%);
+
+  
+ --Very-Dark-Blue: hsl(234, 12%, 34%);
+  
+ --Grayish-Blue: hsl(229, 6%, 66%);
+    
+ --Very-Light-Gray: hsl(0, 0%, 98%);
+
+  
+   font-family: 'Poppins',
+sans-serif;
+  
+   font-size: 15px;
+
+}
+
+
+* {
+   
+   margin:0;
+    
+   padding:0;
+   
+}
+.container {
+  
+    height:827px;
+ 
+    width:100vw;
+  
+    display:flex;
+    
+    justify-content: center;
+  
+    align-items: center;
+   
+    background-color: var(--Very-Light-Gray);
+
+    }
+
+
+
+.container__box {
+    
+	display:flex;
+   
+	flex-direction: column;
+  
+       justify-content: center;
+ 
+	align-items: center;
+ 
+	margin-top:3px;
+	
+}
+
+
+.container__heading, .container__subheading, .container__text {
+   
+ width:188px;
+   
+ color: var(--Very-Dark-Blue);}
+
+
+
+.container__heading{
+    
+ font-size: 14.7px;
+   
+ font-weight: 200;
+}
+
+
+.container__subheading {
+    
+  font-size: 14.8px;
+  
+  font-weight: 600;
+}
+
+
+.container__text{
+    
+ font-size: 9px;
+   
+ color: var(--Grayish-Blue);
+ 
+ text-align: center;
+   
+ margin: 10px 0 32px;
+
+}
+
+
+.card {
+ 
+height:134px;
+
+ width:188px;
+    
+ border-top: 2px solid;
+    
+ border-radius: 4px;
+    
+ box-sizing: border-box;
+    
+ padding:16px;
+    
+ background-color: #fff;
+    
+ margin:14px 19px;
+   
+ box-shadow: 1px 2px 40px -15px var(--Grayish-Blue);}
+
+
+.card__heading {
+  
+  font-weight: 600;
+  
+  font-size: 12px;
+   
+  color: var(--Very-Dark-Blue);
+   
+  margin-top:-5px;
+}
+
+
+.card__text {
+  
+  line-height: 15px;
+  
+  font-size: 8px;
+  
+  color: var(--Grayish-Blue);
+}
+
+
+.card--one {
+ border-top-color: var(--cyan);
+}
+
+
+
+.card--two {
+ border-top-color: var(--red);
+}
+
+
+
+.card--three {
+ border-top-color: var(--orange);
+}
+
+
+.card--four {
+ border-top-color: var(--blue);
+}
+
+
+
+.card__icon--one {
+ background-image: url('./images/icon-supervisor.svg');
+
+}
+
+.card__icon--two {
+   background-image: url('./images/icon-team-builder.svg');
+}
+
+.card__icon--three {
+    background-image: url('./images/icon-karma.svg');
+
+}
+
+.card__icon--four {
+    background-image: url('./images/icon-calculator.svg');
+}
+
+
+.card__icon {
+  
+  display: inline-block;
+  
+  height:35px;
+ 
+  width:35px;
+  
+  float:right;
+  
+  margin-top:22px;
+  
+  background-size: contain;
+   
+  background-repeat: no-repeat; 
+  
+}
+
+
+@media (min-width:375px) {
+  
+  .card__container{
+   
+     display:flex;
+     
+   flex-wrap:wrap;
+     
+   justify-content: center;
+     
+   padding:26px;
+}
+
+  
+  .card{
+     
+   height: 223px;
+     
+   width:314px;
+     
+   border-top: 3px solid;
+   
+ }
+  
+  .card__icon {
+   
+     height:59px;
+   
+     width:59px;
+    
+    margin-right:13px;
+    
+    margin-top:17px;
+ 
+   }
+   
+
+ .card--one {
+ border-top-color: var(--cyan);
+ }
+
+   
+ 
+.card--two {
+ border-top-color: var(--red);
+}
+
+   
+
+ .card--three {
+ border-top-color: var(--orange);
+}
+
+   
+ 
+.card--four {
+ border-top-color: var(--blue);
+}
+  
+
+  .card__heading {
+    
+    font-size: 18px;
+   
+     margin: 10px 12px 10px;
+
+    }
+   
+
+ .card__text{
+     
+   font-size: 11.5px;
+  
+      line-height: 1.7;
+  
+      margin: 10px 12px 10px;
+   
+ }
+
+}
+
+
+
+@media (min-width:1100px) {
+    
+.container__box{
+    
+    position: relative;
+       
+ width:1400px;
+    }
+ 
+  
+
+ .card__container{
+    
+    margin-top:-15px;
+ 
+   }
+
+    
+
+.container__heading,
+ .container__subheading{
+      
+  width:450px;
+     
+   text-align: center;
+  
+  }
+   
+
+ .container__heading,
+.container__subheading {
+    
+    font-size: 33px;
+  
+  }
+   
+
+ .container__heading{
+     
+   margin-top:20px;
+   
+ }
+   
+ 
+.container__text{
+    
+    font-size: 14px;
+    
+    width:479px;
+   
+ }
+
+  
+
+  .card__container{
+      
+  flex-wrap: wrap;
+  
+  }
+   
+
+ .card{
+      
+  margin-left:13.5px;
+      
+  margin-right:13.5px;
+ 
+   }
+    
+
+.card--one{
+    
+    position: relative;
+       
+ top:125px;;
+   
+ }
+  
+
+  .card--three{
+    
+    order:4;
+   
+ }
+ 
+  .card--four{
+   
+     order:3;
+    
+    position: relative;
+      
+  top:125px;
+   
+ }
+
+
+}
